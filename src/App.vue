@@ -32,8 +32,8 @@ const isOpenModel = ref(false)
 const modalMessage = ref('')
 const modalBtn: any = ref()
 const timestamp = new Date().getTime();
-const jsonPath = `../public/tinchi.json?timestamp=${timestamp}`;
-const excelPath = `../public/tinchi.xlsx?timestamp=${timestamp}`;
+const jsonPath ='./tinchi.json'+`?timestamp=${new Date().getTime()}`
+const excelPath ='./tinchi.xlsx'+`?timestamp=${new Date().getTime()}`
 
 
 const fetchData = async function () {
